@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+.blue {
+	color: #0065DF;
+}
+
+.new {
+	text-align: center;
+	margin-top: 50px;
+	background-color: #DFDFDF;
+	border-bottom: 3px solid #D50000;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: black;
+	font-size: 40px;
+	transition: 1s;
+}
+
+.new:hover {
+	text-align: center;
+	margin-top: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: black;
+	border-bottom: 3px solid #0065DF;
+	font-size: 40px;
+	box-shadow: 0 0 10px rgba(0,0,0,1);
+	
+}
+
+.lol-n {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 40px;
+	color:black;
+	
+}
+
+.lol {
+	text-align: center;
+	font-size: 40px;
+	color:black;
+	
+}
+
+.red {
+	color:#D50000;
+}
+
+body {
+	background-color:white;
+	font-family:"Google Sans";
+}
+
+nav {
+	border-bottom: 5px solid #D50000;
+	height: 0px;
+	transition: 0.6s;
+	padding-bottom: -100px;
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-top: -10px;
+	padding-top: 10px;
+	margin-bottom: 50px;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+nav:hover {
+	border-bottom: 3px solid #0065DF;
+	height: 80px;
+	background-color:#DFDFDF;
+}
+
+nav ul {
+	margin: 0;
+	padding-left: 0;
+	opacity: 0;
+	padding-top: 25px;
+	transition: 0.2s;
+	text-align: center;
+}
+
+nav:hover ul{
+	opacity: 1;
+	transition: 2s cubic-bezier(0.4, 0.3, 0.5, 1);
+}
+
+nav img {
+	margin: 0;
+	opacity: 0;
+	transition: 2s;
+	width: 10px;
+	padding: 0px;
+	margin-top: -50px;
+	
+}
+
+nav:hover img {
+	margin: 0;
+	opacity: 1;
+	transition: 0.4s;
+	width: 40px;
+}
+
+
+nav li {
+	list-style: none;
+	border-top: 2px double #0065DF;
+	display: inline;
+	margin-right: -4px;
+	padding: 20px;
+	width: 0px;
+	height: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0065DF;
+}
+
+.thispage {
+	color: black;
+	transition: 0.5s;
+}
+
+.thispage:hover {
+	color: #D50000;
+}
+
+aside {
+	width: 20;
+	border-right: 5px solid #D50000;
+}
+
+aside li {
+	list-style: none;
+	display: inherit;
+	margin-right: -4px;
+	padding: 20px;
+	width: 0px;
+	height: 0px;
+}
+/* Не заходи туда, Боже, нет! */
+
+/* задаем относительное позиционирование контейнеру */
+.block{position:relative;}
+/* Оформление скрытого элемента по умолчанию */ 
+.hidden
+{display: none;
+position: absolute;
+bottom: 130%;
+left: 0px;
+background-color: #fff;
+color: #D50000;
+padding: 5px;
+text-align: center;
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+box-shadow: 0 1px 1px rgba(0,0,0,.16);
+font-size: 18px;
+font-family:"Google Sans";
+}
+/* Дополнительное оформление скрытого элемента(необязательно) */
+.hover + .hidden:before
+{content: " ";
+position: absolute;
+top: 98%;
+left: 10%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+height: 0;
+width: 0;
+border: 7px solid transparent;
+border-right: 7px solid #fff;
+border-color: #fff transparent transparent transparent;
+z-index: 2;
+}
+/* Дополнительное оформление скрытого элемента(необязательно) */
+.hover + .hidden:after
+{content: " ";
+position: absolute;
+top: 100%;
+left: 10%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+height: 0;
+width: 0;
+border: 7px solid transparent;
+border-right: 7px solid #fff;
+border-color: rgba(0,0,0,.16) transparent transparent transparent;
+z-index: 1;}
+/* Появление скрытого элемента при наведении */
+.hover:hover + .hidden{display: block;}
+
+footer {
+	bottom: 7px;
+	position: fixed;
+}
+
+.hover {
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #D50000;
+	border: 3px solid #BC0000;
+	font-family:"Google Sans";
+	color: white;
+}
