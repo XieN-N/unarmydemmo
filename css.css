@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+.blockl {
+	font-size: 40px;
+	margin-left: 30px;
+}
+
 .blue {
 	color: #0065DF;
 }
@@ -22,10 +27,11 @@
 	margin-top: 50px;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	color: black;
+	color:black;
 	border-bottom: 3px solid #0065DF;
 	font-size: 40px;
-	box-shadow: 0 0 10px rgba(0,0,0,1);
+	background-color:#ADADAD;
+	/*box-shadow: 0 0 10px rgba(0,0,0,1);*/
 	
 }
 
